@@ -1,0 +1,149 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "LaravelSwaggerSample",
+        "description": "Laravel\u3067Swagger\u3092\u7ba1\u7406\u3059\u308b\u30b5\u30f3\u30d7\u30eb",
+        "contact": {
+            "email": "kubotak@istyle.co.jp"
+        },
+        "license": {
+            "name": "MIT License",
+            "url": "https://opensource.org/licenses/MIT"
+        },
+        "version": "1.0.0"
+    },
+    "host": "192.168.99.100",
+    "basePath": "/api",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/game_software/release/week": {
+            "get": {
+                "summary": "\u4eca\u9031\u767a\u58f2\u306e\u30b2\u30fc\u30e0\u30bd\u30d5\u30c8",
+                "description": "",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/hal+json"
+                ],
+                "parameters": [
+                    {
+                        "$ref": "#/parameters/GetThisWeeksGameSoftwareReleaseRequest_limit"
+                    },
+                    {
+                        "$ref": "#/parameters/GetThisWeeksGameSoftwareReleaseRequest_offset"
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "$ref": "#/responses/GetThisWeeksGameSoftwareReleaseResponder"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "GameSoftwareCollection": {
+            "properties": {
+                "game_software": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/GameSoftware"
+                    },
+                    "xml": {
+                        "name": "GameSoftware",
+                        "wrapped": true
+                    }
+                }
+            },
+            "type": "object",
+            "xml": {
+                "name": "GameSoftwareCollection"
+            }
+        },
+        "GameSoftware": {
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "releaseDate": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "platform": {
+                    "type": "string"
+                },
+                "thumbnail": {
+                    "type": "string"
+                },
+                "_links": {
+                    "properties": {
+                        "self": {
+                            "properties": {
+                                "href": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "page": {
+                            "properties": {
+                                "href": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "type": "object",
+            "xml": {
+                "name": "GameSoftware"
+            }
+        }
+    },
+    "parameters": {
+        "GetThisWeeksGameSoftwareReleaseRequest_limit": {
+            "name": "limit",
+            "in": "query",
+            "description": "\u53d6\u5f97\u4ef6\u6570",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "GetThisWeeksGameSoftwareReleaseRequest_offset": {
+            "name": "offset",
+            "in": "query",
+            "description": "\u53d6\u5f97\u4f4d\u7f6e",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        }
+    },
+    "responses": {
+        "GetThisWeeksGameSoftwareReleaseResponder": {
+            "description": "\u4eca\u9031\u767a\u58f2\u306e\u30b2\u30fc\u30e0\u3092\u8fd4\u3059",
+            "schema": {
+                "$ref": "#/definitions/GameSoftwareCollection"
+            }
+        }
+    },
+    "externalDocs": {
+        "description": "Find out more about Swagger",
+        "url": "http://swagger.io"
+    }
+}

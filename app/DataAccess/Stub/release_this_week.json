@@ -1,0 +1,32 @@
+{
+  "0": {
+    "id": 1,
+    "title": "スーパーマリオオデッセイ",
+    "description": "マリオ、世界の旅へ。Nintendo Switch向けソフトに新作3Dマリオが登場します。\n大きな箱庭ステージを縦横無尽に走り回るマリオは『スーパーマリオサンシャイン』以来15年ぶり。\n幅跳びやボディアタックといった、3Dマリオ特有のアクションはそのままに、敵を倒したり、足場にしたりと、帽子を使った新たなアクションが加わりました。\n帽子の相棒キャッピーの能力で、マリオは敵やモノに憑依できる「キャプチャー」という能力を身に着けました。",
+    "release_date": "2017/10/27",
+    "price": "5545",
+    "retail_price_desired": "6458",
+    "platform": "Nintendo Switch",
+    "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/71ax%2BLpI8cL._SY445_.jpg"
+  },
+  "1": {
+    "id": 2,
+    "title": "Splatoon 2 (スプラトゥーン2)",
+    "description": "イカしたやつらがイカした進化! ガチで塗りあう時がきた! Nintendo Switchで、いつでも、どこでも「ナワバリバトル」\nバトルの勝敗を左右するブキと、ギア(服装)。カスタマイズして、お気に入りの組み合わせを見つけよう!\nタコ軍団、再び。ひとりでアソブ「ヒーローモード」\n最大4人で協力する新たな遊びが追加! 仲間とともに怪しいバイト「サーモンラン」\nTwitter『スプラトゥーン』公式アカウント(@SplatoonJP)にて、最新情報をチェック!",
+    "release_date": "2017/7/21",
+    "price": "5563",
+    "retail_price_desired": "6458",
+    "platform": "Nintendo Switch",
+    "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/71yVtBkLYtL._SY445_.jpg"
+  },
+  "2": {
+    "id": 3,
+    "title": "ゼルダの伝説 ブレス オブ ザ ワイルド",
+    "description": "駆ける、活きる、護る。果てなき冒険を思いのままに。\n広大な世界を舞台に、どこに行くのも、何をするのも、冒険のすべてがあなた次第。Nintendo Switchなら、自宅のテレビでじっくりプレイした続きを外出中に楽しむなど、プレイスタイルも自由自在。",
+    "release_date": "2017/3/3",
+    "price": "6508",
+    "retail_price_desired": "7538",
+    "platform": "Nintendo Switch",
+    "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/81iU0U8VZML._SY445_.jpg"
+  }
+}
